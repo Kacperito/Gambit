@@ -1,0 +1,132 @@
+﻿<Window x:Class="Gambit.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gambit"
+        xmlns:vm="clr-namespace:Gambit.ViewModel"
+        mc:Ignorable="d"
+        Title="Gambiit" Height="640" Width="660">
+
+    <Window.DataContext>
+        <vm:ViewModel x:Name="viewModel"/>
+    </Window.DataContext>
+    
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Row="0" Grid.Column="0" FontSize="50" Background="{Binding Kolor[0],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="00"><Image Source="{Binding Board[0],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="0" Grid.Column="1" FontSize="50" Background="{Binding Kolor[1],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="01"><Image Source="{Binding Board[1],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="0" Grid.Column="2" FontSize="50" Background="{Binding Kolor[2],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="02"><Image Source="{Binding Board[2],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="0" Grid.Column="3" FontSize="50" Background="{Binding Kolor[3],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="03"><Image Source="{Binding Board[3],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="0" Grid.Column="4" FontSize="50" Background="{Binding Kolor[4],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="04"><Image Source="{Binding Board[4],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="0" Grid.Column="5" FontSize="50" Background="{Binding Kolor[5],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="05"><Image Source="{Binding Board[5],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="0" Grid.Column="6" FontSize="50" Background="{Binding Kolor[6],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="06"><Image Source="{Binding Board[6],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="0" Grid.Column="7" FontSize="50" Background="{Binding Kolor[7],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="07"><Image Source="{Binding Board[7],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="1" Grid.Column="0" FontSize="50" Background="{Binding Kolor[8],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="10"><Image Source="{Binding Board[8],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="1" Grid.Column="1" FontSize="50" Background="{Binding Kolor[9],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="11"><Image Source="{Binding Board[9],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="1" Grid.Column="2" FontSize="50" Background="{Binding Kolor[10],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="12"><Image Source="{Binding Board[10],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="1" Grid.Column="3" FontSize="50" Background="{Binding Kolor[11],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="13"><Image Source="{Binding Board[11],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="1" Grid.Column="4" FontSize="50" Background="{Binding Kolor[12],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="14"><Image Source="{Binding Board[12],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="1" Grid.Column="5" FontSize="50" Background="{Binding Kolor[13],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="15"><Image Source="{Binding Board[13],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="1" Grid.Column="6" FontSize="50" Background="{Binding Kolor[14],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="16"><Image Source="{Binding Board[14],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="1" Grid.Column="7" FontSize="50" Background="{Binding Kolor[15],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="17"><Image Source="{Binding Board[15],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="2" Grid.Column="0" FontSize="50" Background="{Binding Kolor[16],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="20"><Image Source="{Binding Board[16],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="2" Grid.Column="1" FontSize="50" Background="{Binding Kolor[17],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="21"><Image Source="{Binding Board[17],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="2" Grid.Column="2" FontSize="50" Background="{Binding Kolor[18],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="22"><Image Source="{Binding Board[18],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="2" Grid.Column="3" FontSize="50" Background="{Binding Kolor[19],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="23"><Image Source="{Binding Board[19],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="2" Grid.Column="4" FontSize="50" Background="{Binding Kolor[20],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="24"><Image Source="{Binding Board[20],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="2" Grid.Column="5" FontSize="50" Background="{Binding Kolor[21],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="25"><Image Source="{Binding Board[21],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="2" Grid.Column="6" FontSize="50" Background="{Binding Kolor[22],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="26"><Image Source="{Binding Board[22],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="2" Grid.Column="7" FontSize="50" Background="{Binding Kolor[23],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="27"><Image Source="{Binding Board[23],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="3" Grid.Column="0" FontSize="50" Background="{Binding Kolor[24],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="30"><Image Source="{Binding Board[24],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="3" Grid.Column="1" FontSize="50" Background="{Binding Kolor[25],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="31"><Image Source="{Binding Board[25],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="3" Grid.Column="2" FontSize="50" Background="{Binding Kolor[26],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="32"><Image Source="{Binding Board[26],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="3" Grid.Column="3" FontSize="50" Background="{Binding Kolor[27],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="33"><Image Source="{Binding Board[27],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="3" Grid.Column="4" FontSize="50" Background="{Binding Kolor[28],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="34"><Image Source="{Binding Board[28],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="3" Grid.Column="5" FontSize="50" Background="{Binding Kolor[29],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="35"><Image Source="{Binding Board[29],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="3" Grid.Column="6" FontSize="50" Background="{Binding Kolor[30],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="36"><Image Source="{Binding Board[30],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="3" Grid.Column="7" FontSize="50" Background="{Binding Kolor[31],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="37"><Image Source="{Binding Board[31],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="4" Grid.Column="0" FontSize="50" Background="{Binding Kolor[32],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="40"><Image Source="{Binding Board[32],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="4" Grid.Column="1" FontSize="50" Background="{Binding Kolor[33],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="41"><Image Source="{Binding Board[33],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="4" Grid.Column="2" FontSize="50" Background="{Binding Kolor[34],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="42"><Image Source="{Binding Board[34],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="4" Grid.Column="3" FontSize="50" Background="{Binding Kolor[35],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="43"><Image Source="{Binding Board[35],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="4" Grid.Column="4" FontSize="50" Background="{Binding Kolor[36],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="44"><Image Source="{Binding Board[36],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="4" Grid.Column="5" FontSize="50" Background="{Binding Kolor[37],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="45"><Image Source="{Binding Board[37],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="4" Grid.Column="6" FontSize="50" Background="{Binding Kolor[38],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="46"><Image Source="{Binding Board[38],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="4" Grid.Column="7" FontSize="50" Background="{Binding Kolor[39],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="47"><Image Source="{Binding Board[39],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="5" Grid.Column="0" FontSize="50" Background="{Binding Kolor[40],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="50"><Image Source="{Binding Board[40],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="5" Grid.Column="1" FontSize="50" Background="{Binding Kolor[41],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="51"><Image Source="{Binding Board[41],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="5" Grid.Column="2" FontSize="50" Background="{Binding Kolor[42],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="52"><Image Source="{Binding Board[42],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="5" Grid.Column="3" FontSize="50" Background="{Binding Kolor[43],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="53"><Image Source="{Binding Board[43],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="5" Grid.Column="4" FontSize="50" Background="{Binding Kolor[44],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="54"><Image Source="{Binding Board[44],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="5" Grid.Column="5" FontSize="50" Background="{Binding Kolor[45],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="55"><Image Source="{Binding Board[45],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="5" Grid.Column="6" FontSize="50" Background="{Binding Kolor[46],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="56"><Image Source="{Binding Board[46],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="5" Grid.Column="7" FontSize="50" Background="{Binding Kolor[47],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="57"><Image Source="{Binding Board[47],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="6" Grid.Column="0" FontSize="50" Background="{Binding Kolor[48],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="60"><Image Source="{Binding Board[48],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="6" Grid.Column="1" FontSize="50" Background="{Binding Kolor[49],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="61"><Image Source="{Binding Board[49],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="6" Grid.Column="2" FontSize="50" Background="{Binding Kolor[50],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="62"><Image Source="{Binding Board[50],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="6" Grid.Column="3" FontSize="50" Background="{Binding Kolor[51],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="63"><Image Source="{Binding Board[51],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="6" Grid.Column="4" FontSize="50" Background="{Binding Kolor[52],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="64"><Image Source="{Binding Board[52],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="6" Grid.Column="5" FontSize="50" Background="{Binding Kolor[53],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="65"><Image Source="{Binding Board[53],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="6" Grid.Column="6" FontSize="50" Background="{Binding Kolor[54],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="66"><Image Source="{Binding Board[54],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="6" Grid.Column="7" FontSize="50" Background="{Binding Kolor[55],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="67"><Image Source="{Binding Board[55],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="7" Grid.Column="0" FontSize="50" Background="{Binding Kolor[56],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="70"><Image Source="{Binding Board[56],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="7" Grid.Column="1" FontSize="50" Background="{Binding Kolor[57],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="71"><Image Source="{Binding Board[57],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="7" Grid.Column="2" FontSize="50" Background="{Binding Kolor[58],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="72"><Image Source="{Binding Board[58],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="7" Grid.Column="3" FontSize="50" Background="{Binding Kolor[59],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="73"><Image Source="{Binding Board[59],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="7" Grid.Column="4" FontSize="50" Background="{Binding Kolor[60],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="74"><Image Source="{Binding Board[60],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="7" Grid.Column="5" FontSize="50" Background="{Binding Kolor[61],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="75"><Image Source="{Binding Board[61],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="7" Grid.Column="6" FontSize="50" Background="{Binding Kolor[62],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="76"><Image Source="{Binding Board[62],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="7" Grid.Column="7" FontSize="50" Background="{Binding Kolor[63],Mode=OneWay}" Command="{Binding Clicked}" CommandParameter="77"><Image Source="{Binding Board[63],Mode=OneWay}" Stretch="None" Height="50" Width="50" Focusable="{Binding Foc,Mode=OneWay}" /></Button>
+        <Button Grid.Row="3" Grid.Column="2" Content="Start" FontSize="50" Grid.RowSpan="2" Grid.ColumnSpan="4" Background="LightPink" Command="{Binding Start}" Visibility="{Binding Visibility2,Mode=OneWay}"/>
+
+        <Border BorderBrush="Black" BorderThickness="5" Grid.Row="3" Grid.Column="2" Grid.RowSpan="1" Grid.ColumnSpan="4" Visibility="{Binding Visibility,Mode=OneWay}">
+            <Grid Grid.Row="3" Grid.Column="2" Grid.RowSpan="1" Grid.ColumnSpan="4" Background="LightPink" >
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Background="LightGreen" Command="{Binding Wybor}" CommandParameter="1">
+                    <Image Source="{Binding Choice[0],Mode=OneWay}" Stretch="None" Height="50" Width="50" />
+                </Button>
+                <Button Grid.Column="1" Background="LightGreen" Command="{Binding Wybor}" CommandParameter="2">
+                    <Image Source="{Binding Choice[1],Mode=OneWay}" Stretch="None" Height="50" Width="50" />
+                </Button>
+                <Button Grid.Column="2" Background="LightGreen" Command="{Binding Wybor}" CommandParameter="3">
+                    <Image Source="{Binding Choice[2],Mode=OneWay}" Stretch="None" Height="50" Width="50" />
+                </Button>
+                <Button Grid.Column="3" Background="LightGreen" Command="{Binding Wybor}" CommandParameter="4">
+                    <Image Source="{Binding Choice[3],Mode=OneWay}" Stretch="None" Height="50" Width="50" />
+                </Button>
+
+
+            </Grid>
+        </Border>
+        
+    </Grid>
+</Window>
